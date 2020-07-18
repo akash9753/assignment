@@ -1,0 +1,34 @@
+NAME-AKSHAY SUNIL KADAM
+ROLL NO-200240320015
+ASSIGNMENT NO-4
+
+
+Q1)
+
+SELECT Onum,Amt,Odate FROM ORDERS;
+
+----------------------------------------------------
+
+Q2)
+
+SELECT * FROM CUSTOMERS WHERE Snum=1001;
+
+-------------------------------------------------------
+
+Q3)
+
+ SELECT City,Sname,Snum,Comm FROM SALESPEOPLE;
+
+-------------------------------------------------------
+
+Q4)
+
+SELECT Rating,Cname FROM CUSTOMERS WHERE City='San Jose';
+
+-----------------------------------------------------------
+
+Q5)
+
+SELECT DISTINCT Snum FROM SALESPEOPLE
+UNION
+SELECT DISTINCT Onum FROM ORDERS;
