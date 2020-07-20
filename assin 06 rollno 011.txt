@@ -1,0 +1,32 @@
+roll no - 200240320011
+Q1)
+
+1)SELECT * FROM ORDERS WHERE Odate='1990-10-03' OR Odate='1990-10-04';
+2)SELECT * FROM ORDERS WHERE Odate BETWEEN '1990-10-03'AND'1990-10-04';
+
+
+-----------------------------------------------------------
+
+Q2)
+
+ SELECT * FROM CUSTOMERS WHERE Snum IN(SELECT Snum FROM SALESPEOPLE WHERE Sname IN('peel','Motika'));
+
+
+----------------------------------------------------------
+
+Q3)
+
+SELECT * FROM CUSTOMERS WHERE Cname >='A'AND  Cname < 'G';
+SELECT * FROM CUSTOMERS WHERE Cname BETWEEN  'A%'AND 'G%';
+
+---------------------------------------------------------
+
+Q4)
+
+SELECT * FROM CUSTOMERS WHERE Cname LIKE 'C%';
+
+--------------------------------------------------------
+
+Q5)
+
+SELECT * FROM ORDERS WHERE Amt BETWEEN 0 AND 'NULL';
