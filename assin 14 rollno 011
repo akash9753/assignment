@@ -1,0 +1,18 @@
+NAME-akash patel
+ROLL NO-200240320011
+========================================================
+Q!)
+INSERT INTO SALESPEOPLE (SNUM,Sname,CITY,COMM) VALUES (1100,'BLANCO','SAN JOSE', NULL);
+-------------------------------------------------------
+Q2)
+ DELETE  FROM ORDERS WHERE SNUM=(SELECT SNUM FROM CUSTOMERS WHERE CNAME='CLEMENS');
+------------------------------------------------------
+Q3)
+   update customers set rating= rating+100 where city='Rome';
+-----------------------------------------------------
+Q4)
+   update customers set snum =(select snum from salespeople where sname='serres') where 
+   snum =(select snum from salespeople where sname='Motika');
+   
+-----------------------------------------------------
+

@@ -1,0 +1,24 @@
+NAME-akash patel
+ROLL NO-200240320011
+
+==================================================================
+Q1)
+ 
+ SELECT Onum,Cname from ORDERS,CUSTOMERS
+ where ORDERS.Cnum=CUSTOMERS.Cname
+ ----------------------------------------------------------------
+ Q2)
+ 
+ SELECT Sname,cname,CUSTOMERS.snum from SALESPEOPLE,CUSTOMERS WHERE SALESPEOPLE.Snum=CUSTOMERS.Snum;
+--------------------------------------------------------------------
+Q3)
+SELECT sname,cname,SALESPEOPLE.comm*0.12 rate_comm from SALESPEOPLE,CUSTOMERS WHERE SALESPEOPLE.snum=CUSTOMERS.snum;
+
+-------------------------------------------------------------------
+Q4)
+
+SELECT AMT,COMM FROM CUSTOMERS,ORDERS,SALESPEOPLE
+	WHERE CUSTOMERS.SNUM = ORDERS.SNUM
+	AND ORDERS.SNUM = SALESPEOPLE.SNUM
+	AND RATING > 100
+	ORDER BY RATING > 100;

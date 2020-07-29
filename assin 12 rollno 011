@@ -1,0 +1,36 @@
+NAME-akash patel
+ROLL NO-200240320011
+===================================================================
+Q1)
+SELECT CNAME FROM CUSTOMERS
+     WHERE SNUM=>
+    (SELECT SNUM FROM SALESPEOPLE
+     WHERE SNAME='SERRES');
+     
+     SELECT CNAME,RATING FROM CUSTOMERS WHERE RATING = ANY (SELECT RATING FROM
+ CUSTOMERS WHERE SNUM=(SELECT SNUM FROM SALESPEOPLE  WHERE SNAME='SERRES'));
+-----------------------------------------------------------------
+Q2)
+
+
+
+
+
+----------------------------------------------------------------
+Q3)
+
+ SELECT ONUM FROM ORDERS WHERE AMT>ANY (SELECT CNAME FROM CUSTOMERS WHERE
+CITY='LONDON')
+
+
+
+---------------------------------------------------------------
+Q4)
+
+
+
+
+
+
+
+---------------------------------------------------------------

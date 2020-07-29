@@ -1,0 +1,18 @@
+NAME-akash patel
+ROLL NO-200240320011
+=====================================================
+Q1)
+
+   CREATE INDEX I_DATE ON orders(odate);
+-----------------------------------------------------
+Q2)
+  create unique index i_onum on orders(onum);
+----------------------------------------------------
+Q3)
+  
+    CREATE INDEX I_DATE ON orders(odate);
+-------------------------------------------------------
+Q4)
+
+   create unique index i_rating on customers(rating);
+-------------------------------------------------------

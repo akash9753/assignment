@@ -1,0 +1,15 @@
+NAME-akash patel
+ROLL NO-200240320011
+==============================================================
+Q1)
+
+ SELECT CNAME,CITY,RATING AS 'HIGH RATING'FROM CUSTOMERS WHERE RATING >=200 
+ UNION 
+ SELECT CNAME,CITY,RATING AS 'LOW RATING' FROM CUSTOMERS WHERE RATING <200;
+----------------------------------------------------------
+Q2)
+
+exit
+
+
+

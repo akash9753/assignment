@@ -1,0 +1,42 @@
+NAME-akash patel
+ROLL NO-200240320011
+ASSIGNMENT NO-7
+
+Q Write a query that counts all orders for October 3.
+ans-select count(onum) total_order from orders WHERE odate LIKE '%-10-03';
+
+-----------------------------------------------------------------------------------------------
+Q Write a query that counts the number of different non-NULL city values in the Customers table.
+ans-
+select count(cnum) empty_city from customers where cnum is not NULL;
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------
+Q. Write a query that selects each customer’s smallest order.
+ans- select min(amt)"smallest order",cnum from orders group by cnum;
+-------------------------------------------------------------------------------------------------
+Q Write a query that selects the first customer, in alphabetical order, whose name begins with G.
+ans - 
+select * from customers where cname like 'g%' order by cname;
+
+
+
+--------------------------------------------------------------------------------------------------
+Q Write a query that selects the highest rating in each city.
+
+select  max(rating) "highest rating" from customers;
+
+
+---------------------------------------------------------------------------------------------------
+Write a query that counts the number of salespeople registering orders for each day. 
+(If a salesperson has more than one order on a given day, he or she should be counted only once.).
+SELECT count(odate)||' SALES PERSON REGISTREDDON' "TOTAL",
+       odate
+FROM orders
+GROUP BY odate;
